@@ -11,7 +11,7 @@ const port = 3001;
 
 const configuration = new Configuration({
     organization: "org-zPR0n5y7oCfoLnzpBrpF6Kvs",
-    apiKey: "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",
+    apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 //const response = await openai.listEngines();
@@ -34,7 +34,7 @@ app.post('/', async (req, res) => {
            Person: What time it is?
            Steve: It is time to be happy''
            Person:`+ message,
-    max_tokens: 17,
+    max_tokens: 300,
     temperature: 0,
     });
     console.log(response.data)

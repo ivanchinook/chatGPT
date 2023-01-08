@@ -27,7 +27,7 @@ function App() {
         ></textarea> 
         <button type="submit">Submit</button>
       </form>
-      <div>{response}</div>
+      {response && <div><b>Steve:</b>{response}</div>}
     </div>
   );
 }
